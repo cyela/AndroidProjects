@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Show All"
+        android:id="@+id/ShowAll" />
+    <item android:title="Show Completed"
+        android:id="@+id/ShowComp" />
+    <item android:title="Show Pending"
+        android:id="@+id/ShowPend" />
+    <item android:title="Sort by Time"
+        android:id="@+id/SortTime" />
+
+</menu>
