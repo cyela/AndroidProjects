@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.chandrakanth.newsapp.MainActivity">
+
+    <Spinner
+        android:id="@+id/Source"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:popupBackground="@android:drawable/spinner_dropdown_background"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/Select_News_Source"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/Get_News"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/GetNews"
+        android:layout_below="@+id/Source"
+        android:layout_toRightOf="@+id/IBPrevious"
+        android:layout_toEndOf="@+id/IBPrevious" />
+
+    <Button
+        android:text="Finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonFinish" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/first"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/IBFirst"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/previous"
+        android:id="@+id/IBPrevious"
+        android:scaleType="fitCenter"
+        android:layout_alignTop="@+id/buttonFinish"
+        android:layout_toRightOf="@+id/IBFirst"
+        android:layout_toEndOf="@+id/IBFirst" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/last"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/IBLast"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/next"
+        android:id="@+id/IBNext"
+        android:scaleType="fitCenter"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/IBLast"
+        android:layout_toStartOf="@+id/IBLast" />
+
+    <RelativeLayout
+        android:layout_width="340dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/IBFirst"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/GetNews"
+        android:background="@drawable/border">
+
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:id="@+id/scrollView2"
+            android:layout_below="@+id/imageNews"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp">
+
+            <LinearLayout
+                android:id="@+id/scrollViewLinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/imageNews"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/scrollView2"
+            android:layout_alignStart="@+id/scrollView2"
+            android:layout_marginLeft="88dp"
+            android:layout_marginStart="88dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
