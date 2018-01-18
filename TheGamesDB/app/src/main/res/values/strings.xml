@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TheGamesDB</string>
+    <string name="ButtonSearch">Search</string>
+    <string name="ButtonGo">Go</string>
+    <string name="Play_Trailor">Play Trailor</string>
+    <string name="SimilarGames">Similar Games</string>
+    <string name="Finish">Finish</string>
+    <string name="Play_Trailer">Play Trailer</string>
+</resources>
