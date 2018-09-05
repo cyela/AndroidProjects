@@ -1,5 +1,6 @@
 ## This is Repository of Android Projects which I have worked during my Course
-### The Applications are developed using Android Studio, SQLite, Firebase
+  * Tools & Technology that were used:
+    *Android Studio, SQLite, Firebase, Gradle
   * ITunesTopPaidApps
     *Application uses Asyncronous call to fetch details from the itunes url and the data retrieved in the form of JSON. These JSON data is handled and details are populated in Recycler View of the application
   * NewsApp
